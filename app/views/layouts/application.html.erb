@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="menubar">
+
+  <ul class="nav nav-pills nav-fill">
+  <li <% if params[:controller] == "home" && params[:action] == "index" %> class="active"<%end%> >
+    <a class="nav-link active" href="/">Strona główna</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/about">O floatingu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/sesja">Sesja krok po kroku</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/oferta">Oferta</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/przeciwskazania">Przeciwskazania</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/kontakt">Skontaktuj się</a>
+  </li>
+
+</ul>
+  </div>
+    <div class="container">
+      <div class="transbox">
+        <%= yield %>
+    </div>
+  </body>
+</html>

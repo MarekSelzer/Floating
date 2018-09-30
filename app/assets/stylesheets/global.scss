@@ -1,0 +1,25 @@
+body {
+  background-image: asset-url("floating.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  padding-top: 320px;
+}
+
+.container{
+  padding: 40px;
+}
+
+div.transbox {
+    margin: 30px;
+      padding: 40px;
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.6);
+
+}
+
+div.transbox p {
+    margin: 5%;
+    color: #000000;
+}
